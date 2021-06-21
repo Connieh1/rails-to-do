@@ -1,4 +1,4 @@
-<h1>Create a new task </h1>
+<h1>Create a new todo </h1>
 
 <% if @todo.errors.any? %>
  <h2> The following errors prevented the task from being saved.</h2>
@@ -24,3 +24,5 @@
   </p>
 
 <% end %>
+
+<%= link_to "Back to todos listings", todos_path %>
