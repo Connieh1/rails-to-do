@@ -1,10 +1,17 @@
 <h1> Todo </h1>
 
-<p>
-  name: <%= @todo.name %>
-</p>
-<p>
-  description: <%= @todo.description %>
-</p>
-<%= link_to "Edit this todo", edit_todo_path(@todo) %> |
-<%= link_to "Back to todos listing", todos_path %>
+<!-- Jumbotron -->
+<div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0%, 94%);">
+  <h2>Name: <%= @todo.name %></h2>
+  <p>
+    Description: <%= @todo.description %>
+  </p>
+
+  <hr class="my-4" />
+
+  
+ 
+    <%= link_to "Edit this todo", edit_todo_path(@todo), class: "btn btn-secondary" %> 
+    <%= link_to "Back to todos listing", todos_path, class: "btn btn-secondary" %>
+
+</div>

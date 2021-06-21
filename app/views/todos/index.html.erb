@@ -1,13 +1,17 @@
 <h1> Todos </h1>
 
 <p>
-  <%= link_to "Create a Todo", new_todo_path %>
+  <%= link_to "Create a Todo", new_todo_path, class: "btn btn-secondary" %>
 </p>
 
-<table>
-  <tr>
-  <th> Name </th>
-  <th> Description </th>
+<table class="table table-striped table-bordered table-hover" >
+  <thead class="table-dark" >
+    <tr>
+      <th> Name </th>
+      <th> Description </th>
+      <th colspan = "3"></th>
+    </tr>
+  </thead>
 
 <% @todos.each do | todo | %>
   <tr>
