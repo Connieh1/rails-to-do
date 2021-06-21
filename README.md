@@ -1,24 +1,20 @@
-# README
+# rails_to_do [![NPM version](https://badge.fury.io/js/rails_to_do.svg)](https://npmjs.org/package/rails_to_do) [![Build Status](https://travis-ci.org/Connieh1/rails_to_do.svg?branch=master)](https://travis-ci.org/Connieh1/rails_to_do)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Rails To-do Application
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+```sh
+$ npm install --save rails_to_do
+```
 
-* System dependencies
+## Usage
 
-* Configuration
+```js
+var railsToDo = require('rails_to_do');
+railsToDo();
+```
 
-* Database creation
+## License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MIT © [C Hyman]()
